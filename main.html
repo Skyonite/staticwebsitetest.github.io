@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="og:image" content="doge.jpg">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link href="style.css" rel="stylesheet">
+    <meta name="og:type" content="website">
+    <script type="text/javascript" src="javacode.js" defer></script>
+    <script>window.twttr = (function(d, s, id) {
+        let js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));</script>
+    <title> Ming Lee </title>
+</head>
+<body>
+
+<div class="bicc-boi"> <!-- Big boi wrapper div for the page, might remove it -->
+    <!-- Left sidebar with logo and list of vtubers -->
+    <div class="left-side">
+
+        <div class="vtuber-info">
+            <img src="images/lulu.png" class="profile-image">
+            <span class="romaji-name"> Vtuber Schedule </span>
+            <br>
+            <span class="name">  </span>
+            <br>
+            <img src="images/yticon.png" class="icons">
+            <a class="yt-link" href="" target="_blank"> YouTube </a>
+            <br>
+            <img src="images/twittericon.png" class="icons">
+            <a class="twitter-link" href="" target="_blank" > Twitter </a>
+        </div>
+
+        <div class="schedule-button-div">
+            <a class="schedule-button" href="https://www.google.com/" target="_blank">
+                <span class="schedule-label"> Schedule </span>
+            </a>
+        </div>
+
+        <div class="add-vtubers-label">
+            <span> Add Virtual Youtuber </span>
+        </div>
+
+        <div class="search-box-div">
+            <input class="search-box" type="text" placeholder="Enter Virtual Youtuber Name Here">
+            <ul class="vtuber-dropdown-list" >
+
+            </ul>
+        </div>
+        <div id="vtuber-list-container">
+            <ul class="vtuber-list">
+
+            </ul>
+
+        </div>
+
+    </div>
+    <!-- Center with vtuber pic, next stream and twitter timeline -->
+    <div class="middle-side">
+
+        <div class="current-vtuber-stream-container" data-id="ctirhXmW5yM" >
+            <div class="current-vtuber-stream-button">
+
+           </div>
+            <img src="images/thumb.png">
+        </div>
+
+        <div class="vtuber-status">
+            <span> Next stream in: </span> <span id="stream-timer"> </span>
+        </div>
+        <div class="prev-broadcasts-container">
+            <ul class="prev-broadcasts-list">
+
+            </ul>
+        </div>
+
+
+    </div>
+    <!-- Right side, past broadcasts -->
+    <div class="right-side">
+
+        <div id="vtuber-twitter">
+            <!-- iframe for the twitter timeline we'll add -->
+            <a class="twitter-timeline" href="https://twitter.com/Makhayn" data-chrome="noheader nofooter noborders noscrollbar" data-screen-name=""></a>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
