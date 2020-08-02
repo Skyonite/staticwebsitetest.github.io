@@ -150,8 +150,8 @@ function createDropdownVtuber(vtuberobject){
 
             const newLiImage = document.createElement('img');
 
-
-            newLiImage.src = vtuberobject.avatarPath;
+            let newavatarPath = vtuberobject.avatarPath.split("/");
+            newLiImage.src = `https://github.com/Skyonite/staticwebsitetest.github.io/raw/master/images/${newavatarPath[1]};
 
 
             newLi.appendChild(newLiImage);
